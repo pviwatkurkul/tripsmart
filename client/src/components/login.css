@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family:"Montserrat", sans-serif;
+}
+
+@import url('vars.css');
+@media (max-width:1512px) and (max-height: 982px){
+
+#statement-head{
+    font-size: 60px;
+    font-weight:700;
+    line-height:normal;
+    width: 44.313rem;
+    height:13.688rem;
+    position:absolute;
+    top:16rem;
+    left:5.25rem;
+}
+}
+hr{
+    border: 1px solid var(--black);
+}
+h2#login-subheader{
+    margin:0;
+    font-weight:600;
+    font-size:48px;
+}
+input{
+    padding-left:14px;
+    padding-top:9px;
+    padding-bottom:9px;
+    border-radius:6px;
+    background: var(--grey);
+    border: 1px solid var(--black);
+    font-size:18px;
+    font-weight:600;
+}
+.loginForm{
+    position:absolute;
+    top:12.688rem;
+    right:8.75rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: right;
+    gap:20px;
+    width:28.875rem;
+}
+hr{
+    width:100%;
+}
+#google-auth{
+    border-radius:6px;
+    padding: 9px 144px 9px;
+    font-size:18px;
+    border:1px solid var(--black);
+    font-size:18px;
+    font-weight:600;
+    line-height:normal;
+    white-space: nowrap;
+    background:var(--grey)
+}
+#login-btn{
+    border-radius:6px;
+    align-self:flex-end;
+    padding: 9px 33px 9px;
+    border: 1px solid var(--black);
+    font-weight:600;
+    font-size:18px;
+    background:var(--grey);
+}
+.redirection{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content:center;
+    font-size:18px;
+}
+#username-reset, #password-reset{
+    background:none;
+    border:none;
+}
