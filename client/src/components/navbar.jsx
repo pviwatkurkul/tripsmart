@@ -1,9 +1,15 @@
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import {useState} from 'react';
 import{ReactComponent as DropSVG} from '../assets/ProfileDropdown.svg';
 import{ReactComponent as StackSVG} from '../assets/Stack.svg';
 import{ReactComponent as Circle} from '../assets/Circle.svg';
+import DropDownModal from '../modals/dropDownModal';
 import "./navbar.css"
 const Navbar = () =>{
+    const[isOpen, setIsOpen] = useState(false);
+    const toggleModal = () =>{
+        setIsOpen(state => !state);
+    }
     return(
         <>
         <div id='Logo'>tripsmart</div>
@@ -12,10 +18,27 @@ const Navbar = () =>{
             <div>Trips </div> 
             <div>Flights </div>
         </div>
-        <button id='dropdown-btn'><DropSVG id='dropdown-Box'/></button>
-        <StackSVG id='stack'/>
-        <Circle id='profile-pic'/>
+        <button onClick={toggleModal} id='dropdown-btn' >
+                <DropSVG id='dropdown-Box'/>
+        </button>
+            <StackSVG id='stack'/>
+            <Circle id='profile-pic'/>
         <hr id='divider' />
+        <DropDownModal open={isOpen}>
+            <div id='dropdown-box'>
+                <div className='dropDownLinks'>
+                    <div>
+                    Edit Profile
+                    </div>
+                    <div>
+                    Friends
+                    </div>
+                    <div>
+                    Log Out
+                    </div>
+                </div>
+            </div>
+        </DropDownModal>
         </>
     );
 
