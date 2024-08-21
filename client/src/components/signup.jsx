@@ -12,8 +12,7 @@ const Signup = () =>{
             <input type="text" value="New Password"></input>
             <button id="login-btn">Sign up</button>
             <div className="redirection">
-                <div>Forgot your <Link to="/" id="username-reset"> <span className="boldedLinks">username</span></Link> or <Link to="/" id="password-reset"><span className="boldedLinks">password</span></Link>?</div>
-                <div>Don't have an account? <Link id="signup-link" to="/"><span className="boldedLinks">Sign up now</span></Link></div>
+                <div>Have an account already? <Link to="/Login" id="username-reset"> <span className="boldedLinks">Log in now</span></Link></div>
             </div>
         </form>
         </>
