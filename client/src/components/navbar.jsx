@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import {useState} from 'react';
+import {useState,createRef} from 'react';
 import{ReactComponent as DropSVG} from '../assets/ProfileDropdown.svg';
 import{ReactComponent as StackSVG} from '../assets/Stack.svg';
 import{ReactComponent as Circle} from '../assets/Circle.svg';
@@ -18,11 +18,11 @@ const Navbar = () =>{
             <div>Trips </div> 
             <div>Flights </div>
         </div>
-        <button onClick={toggleModal} id='dropdown-btn' >
+        <button onClick={toggleModal} id={isOpen ? 'dropdown-btn-active' : 'dropdown-btn'}>
                 <DropSVG id='dropdown-Box'/>
+                <StackSVG id='stack'/>
+                <Circle id='profile-pic'/>
         </button>
-            <StackSVG id='stack'/>
-            <Circle id='profile-pic'/>
         <hr id='divider' />
         <DropDownModal open={isOpen}>
             <div id='dropdown-box'>
