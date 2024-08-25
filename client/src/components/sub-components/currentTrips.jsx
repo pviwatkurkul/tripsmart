@@ -1,13 +1,11 @@
-import './currentTrips.css'
-
-
+import './currentTrips.css';
+import AddTrips from './addTrips';
 const HomeTrips = () =>{
-
-
-
     return (
         <>
-            <div className= 'tripContainer'>
+            <div className= 'tripsContainer'>
+                <AddTrips/>
+                <AddTrips/>
             </div>
         </>
     )

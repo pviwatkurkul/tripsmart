@@ -5,8 +5,14 @@
 
 #current-trips-header{
     margin-top:1.875rem;
-    margin-left:5rem;
+    margin-left:6.5rem;
     font-weight:600;
     font-size:32px;
 }
 
+#previous-trips-header{
+    margin-top:7.438rem;
+    margin-left:5rem;
+    font-weight:600;
+    font-size:32px;
+}

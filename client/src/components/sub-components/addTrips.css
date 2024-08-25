@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family:"Montserrat", sans-serif;
+}
+
+.trip-container{
+    display:flex;
+    flex-direction:column;
+    width:18.688rem;
+    height:24.625rem;
+}
+#img-box{
+    margin-bottom:15px;
+    height:330px;
+    width:299px;
+    border-radius:6px;
+    background-color: var(--grey);
+}
+#trip-name{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+#trip-date{
+    font-size:18px;
+    font-weight:400;
+}

@@ -7,6 +7,7 @@ const HomePage = () => {
         <Navbar/>
         <div id='current-trips-header'>Your Trips</div>
         <HomeTrips/>
+        <div id='previous-trips-header'>Your Previous Trips</div>
         </>
 
     );
