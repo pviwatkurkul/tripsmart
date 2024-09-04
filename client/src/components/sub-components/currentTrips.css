@@ -5,12 +5,14 @@
 
 .tripsContainer{
     min-width: fit-content;
-    height:24.625rem;
-    border:1px solid var(--black);
+    height:27.625rem;
     display:flex;
+    flex-wrap:wrap;
+    flex: 1 0 25;
     padding:0 104px 0px 104px;
-    gap:36px;
+    gap:29px;
     margin-top:1.875rem;
+    overflow-y:scroll;
 }
 
 

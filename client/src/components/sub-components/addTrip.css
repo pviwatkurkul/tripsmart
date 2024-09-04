@@ -4,6 +4,7 @@
 }
 
 .trip-container{
+    position:relative;
     display:flex;
     flex-direction:column;
     width:18.688rem;
@@ -27,4 +28,21 @@
 #trip-date{
     font-size:18px;
     font-weight:400;
+}
+
+#add-button1{
+
+    z-index:2;
+    position:absolute;
+    top:8.813rem;
+    left:8.25rem;
+}
+
+#btn-add-trip{
+    background:none;
+    width:300px;
+    height:330px;
+    padding:0;
+    border:none;
+    z-index:3;
 }
