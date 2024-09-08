@@ -25,7 +25,7 @@ h2#login-subheader{
     font-weight:600;
     font-size:48px;
 }
-input{
+.signupInput {
     padding-left:14px;
     padding-top:9px;
     padding-bottom:9px;

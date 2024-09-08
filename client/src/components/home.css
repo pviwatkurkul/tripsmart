@@ -16,3 +16,49 @@
     font-weight:600;
     font-size:32px;
 }
+
+.addTripContainer{
+    width:44.75rem;
+    height:54.813rem;
+    background-color: white;
+    border: 1px solid var(--black);
+    position:absolute;
+    left:24.875rem;
+    top:10.813rem;
+    border-radius:6px;
+
+}
+form{
+    width:29.125rem;
+    height:45.563rem;
+    margin-left:7.813rem;
+    margin-top:4.625rem;
+}
+
+#form-header{
+    font-weight:600;
+    font-size:32px;
+    margin-bottom:33px;
+}
+
+.subHeaders{
+    font-weight:600;
+    font-size:18px;
+    margin-bottom:13px;
+}
+
+.addTripInput {
+    width:100%;
+    padding: 10px 13px 10px 13px;
+    margin-bottom:33px;
+    font-size:18px;
+    font-weight:400;
+    border-radius:6px;
+    border: 1px solid var(--grey2);
+
+}
+.addTripInput input::placeholder{
+    font-size:18px;    
+    font-weight:400;
+    margin:0;
+}

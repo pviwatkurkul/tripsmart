@@ -8,8 +8,8 @@ const Signup = () =>{
             <h2 id="login-subheader">Sign up in to continue planning your vacation.</h2>
             <button id="google-auth">Log in with Google</button>
             <hr/>
-            <input type="text" value="New Username"></input>
-            <input type="text" value="New Password"></input>
+            <input className="signupInput" type="text" value="New Username"></input>
+            <input className="signupInput" type="text" value="New Password"></input>
             <button id="login-btn">Sign up</button>
             <div className="redirection">
                 <div>Have an account already? <Link to="/Login" id="username-reset"> <span className="boldedLinks">Log in now</span></Link></div>

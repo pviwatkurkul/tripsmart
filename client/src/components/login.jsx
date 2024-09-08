@@ -8,8 +8,8 @@ const Login = () =>{
             <h2 id="login-subheader">Log in to continue planning your vacation.</h2>
             <button id="google-auth">Log in with Google</button>
             <hr/>
-            <input type="text" value="Username"></input>
-            <input type="text" value="Password"></input>
+            <input className="loginInput" type="text" value="Username"></input>
+            <input className="loginInput" type="text" value="Password"></input>
             <button id="login-btn">Log In</button>
             <div className="redirection">
                 <div>Forgot your <Link to="/" id="username-reset"> <span className="boldedLinks">username</span></Link> or <Link to="/" id="password-reset"><span className="boldedLinks">password</span></Link>?</div>
