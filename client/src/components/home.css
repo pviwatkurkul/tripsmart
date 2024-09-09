@@ -62,3 +62,25 @@ form{
     font-weight:400;
     margin:0;
 }
+
+.dateHeaders{
+    display:flex;
+    flex-direction:row;
+    gap:89px;
+}
+
+.dateButtons{
+    display:flex;
+    flex-direction:row;
+    gap:24px;
+}
+
+#select-start-date, #select-end-date{
+    width:160px;
+    height:40px;
+    border: 1px solid var(--grey2);
+    background:none;
+    border-radius:6px;
+    padding:9px 0px 9px 13px;
+    line-height:normal;
+}

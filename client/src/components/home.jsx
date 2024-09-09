@@ -20,10 +20,14 @@ const HomePage = () => {
                 <div className='subHeaders'>Location</div>
                 <input className="addTripInput" id='location-input' type="text" placeholder="Where are we going?"></input>
                 <div className="date-selector">
-                    <div className="subHeaders" id="start-date"></div>
-                    <div className="subHeaders" id="end-date"></div>
-                    <button id="select-start-date"></button>
-                    <button id="select-end-date"></button>
+                    <div className="dateHeaders">
+                        <div className="subHeaders" id="start-date">Start Date</div>
+                        <div className="subHeaders" id="end-date">End Date</div>
+                    </div>
+                    <div className="dateButtons">
+                        <input type="date" id="select-start-date" ></input>
+                        <input type="date" id="select-end-date" ></input>
+                    </div>
                 </div>
                 <div className="subHeaders">Travelers</div>
                 <input className="addTripInput" id='traveler-input' type="text" placeholder="Add Your Friends"></input>
