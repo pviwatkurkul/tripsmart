@@ -55,6 +55,7 @@ form{
     font-weight:400;
     border-radius:6px;
     border: 1px solid var(--grey2);
+    box-sizing:border-box;
 
 }
 .addTripInput input::placeholder{
@@ -81,6 +82,27 @@ form{
     border: 1px solid var(--grey2);
     background:none;
     border-radius:6px;
-    padding:9px 0px 9px 13px;
     line-height:normal;
+    margin-bottom:13px;
+    box-sizing:border-box;
+}
+
+
+
+#location-input{
+    background:url(../assets/search.svg);
+    background-repeat: no-repeat;
+    background-position:left 433px top 9px;
+}  
+
+
+
+#traveler-input{
+    background:url(../assets/search.svg);
+    background-repeat: no-repeat;
+    background-position:left 433px top 9px;
+}  
+
+#start-date{
+    width:95px;
 }

@@ -2,6 +2,7 @@ import Navbar from './navbar';
 import HomeTrips from './sub-components/currentTrips';
 import HomePrevTrips from './sub-components/previousTrips';
 import TripModal from '../modals/tripModal';
+import {ReactComponent as SearchSVG} from '../assets/search.svg'
 import './home.css';
 const HomePage = () => {
     return(
@@ -25,14 +26,15 @@ const HomePage = () => {
                         <div className="subHeaders" id="end-date">End Date</div>
                     </div>
                     <div className="dateButtons">
-                        <input type="date" id="select-start-date" ></input>
-                        <input type="date" id="select-end-date" ></input>
+                        <input type="date" id="select-start-date" placeholder="YYYY-MM-DD"></input>
+                        <input type="date" id="select-end-date" placeholder="MM-DD-YYYY"></input>
                     </div>
                 </div>
-                <div className="subHeaders">Travelers</div>
-                <input className="addTripInput" id='traveler-input' type="text" placeholder="Add Your Friends"></input>
+                <div className="subHeaders" >Travelers</div>
+                <input className="addTripInput" id='traveler-input' type="text" placeholder="Add Your Friends">
+                </input>
                 <div className="subHeaders">Budget Amount</div>
-                <input className="addTripInput" type="text"></input>
+                <input className="addTripInput" type="text" placeholder="$"></input>
 
             </form>
 
