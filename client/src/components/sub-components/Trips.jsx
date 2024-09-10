@@ -1,6 +1,6 @@
-import './addTrips.css';
+import './Trips.css';
 import placeholder from '../../assets/placeholder.jpg';
-const AddTrips = () => {
+const Trips = () => {
     return (
     <>  
         <div className='trip-container'>
@@ -25,9 +25,6 @@ const AddTrips = () => {
     </>
 
     );
-
-
-
 }
 
-export default AddTrips;
+export default Trips;

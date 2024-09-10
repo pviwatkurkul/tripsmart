@@ -19,20 +19,32 @@
 
 .addTripContainer{
     width:44.75rem;
-    height:54.813rem;
+    height:50.125rem;
     background-color: white;
     border: 1px solid var(--black);
     position:absolute;
     left:24.875rem;
     top:10.813rem;
-    border-radius:6px;
+    border-radius:10px;
+    display:flex;
+}
 
+#cancel-button{
+    position:absolute;
+    top:20px;
+    left:666px;
+    padding:0;
+    margin:0;
+    width:32px;
+    height:32px;
+    background:none;
+    border:none;
 }
 form{
     width:29.125rem;
     height:45.563rem;
     margin-left:7.813rem;
-    margin-top:4.625rem;
+    margin-top:4.25rem;
 }
 
 #form-header{
@@ -83,7 +95,7 @@ form{
     background:none;
     border-radius:6px;
     line-height:normal;
-    margin-bottom:13px;
+    margin-bottom:33px;
     box-sizing:border-box;
 }
 
@@ -106,3 +118,33 @@ form{
 #start-date{
     width:95px;
 }
+
+#budget-input{
+    margin-bottom:33px;
+}
+
+.formInput{
+    display:flex;
+    gap:48px;
+    width:100%;
+    justify-content:center;
+}
+.formButtons{
+    font-size:28px;
+    font-weight:600;
+    line-height:normal;
+    padding: 5px 12px 5px 12px;
+    border-radius: 6px;
+    box-sizing:border-box;
+}
+
+#cancel-form{
+    background:none;
+    border:1px solid var(--grey2);
+}
+
+#save-form{
+    border:none;
+    background-color: var(--green);
+}
+

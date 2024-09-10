@@ -1,5 +1,5 @@
 import './previousTrips.css'
-import AddTrips from './addTrips';
+import AddTrips from './Trips';
 
 
 const HomePrevTrips = () =>{

@@ -1,18 +1,18 @@
 import './currentTrips.css';
-import AddTrips from './addTrips';
+import Trips from './Trips';
 import AddTrip from './addTrip';
 const HomeTrips = () =>{
     return (
         <>
             <div className= 'tripsContainer'>
                 <AddTrip/>
-                <AddTrips/>
-                <AddTrips/>
-                <AddTrips/>
-                <AddTrips/>
-                <AddTrips/>
-                <AddTrips/>
-                <AddTrips/>
+                <Trips/>
+                <Trips/>
+                <Trips/>
+                <Trips/>
+                <Trips/>
+                <Trips/>
+                <Trips/>
 
             </div>
         </>
