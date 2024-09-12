@@ -24,9 +24,10 @@
     border: 1px solid var(--black);
     position:absolute;
     left:24.875rem;
-    top:10.813rem;
+    top:4.625rem;
     border-radius:10px;
     display:flex;
+    z-index:1000;
 }
 
 #cancel-button{

@@ -9,7 +9,7 @@ app.use(bodyParser.json({limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
 app.use(cors());
 
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT || 8080;
 const MONGO = process.env.CONNECTION_URL;
 
 mongoose.connect(MONGO)

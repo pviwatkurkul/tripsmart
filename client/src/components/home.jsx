@@ -3,6 +3,7 @@ import HomeTrips from './sub-components/currentTrips';
 import HomePrevTrips from './sub-components/previousTrips';
 import './home.css';
 const HomePage = () => {
+
     return(
         <>
         <Navbar/>

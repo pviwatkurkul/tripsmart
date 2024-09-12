@@ -33,12 +33,12 @@ const AddTrip = () => {
             <div id='trip-date'>
                 Trip Date
             </div>
-            <TripModal open={isOpen}>
+            <TripModal open={isOpen} >
                 <div className="addTripContainer">
-                    <button id="cancel-button">
-                    <Cancel/>
-                    </button>
                     <form id="form-content">
+                    <button id="cancel-button" onClick={() => setIsOpen(false)}>
+                        <Cancel/>
+                    </button>
                         <div id="form-header">Create a New Trip</div>
                         <div className="subHeaders">Trip Name</div>
                         <input className="addTripInput" type="text" id='trip-name-input'></input>
@@ -60,17 +60,16 @@ const AddTrip = () => {
                         <div className="subHeaders">Budget Amount</div>
                         <input className="addTripInput" id="budget-input" type="text" placeholder="$"></input>
                         <div className="formInput">
-                            <button className="formButtons" id="cancel-form">Cancel</button>
+                            <button className="formButtons" id="cancel-form" onClick={() => setIsOpen(false)} >Cancel</button>
                             <button className="formButtons" id="save-form">Save Trip</button>
                         </div>
                         
                     </form>
-
                 </div>
 
                 </TripModal>
-        </div>
 
+        </div>
     </>
 
     );
