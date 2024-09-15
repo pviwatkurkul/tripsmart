@@ -1,12 +1,26 @@
 import "./login.css";
+import {useGoogleLogin} from "@react-oauth/google";
 import {Link} from 'react-router-dom';
+
 const Login = () =>{
+
+    const googleSuccess = (res) => {
+        console.log("LOGIN SUCCESS! Current user: ", res.profileObj);
+    };
+    const googleFailure = (res) =>{
+        console.log("LOGIN FAILED! res: " , res);
+    };
+    const googleLogin = useGoogleLogin({
+        onSuccess:{googleSuccess},
+        onError:{googleFailure}
+    });
+
     return(
         <>
         <h1 id="statement-head">Budget.<br/>Organize.<br/>Plan Together.</h1>
         <form className="loginForm">
             <h2 id="login-subheader">Log in to continue planning your vacation.</h2>
-            <button id="google-auth-login">Log in with Google</button>
+            <button id="google-auth-login" onClick={() => googleLogin()}>Log in with Google</button>
             <hr/>
             <input className="loginInput" type="text" placeholder="Email Address"></input>
             <input className="loginInput" type="password" placeholder="Password"></input>
