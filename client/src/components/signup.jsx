@@ -9,7 +9,7 @@ const Signup = () =>{
             <button id="google-auth-signup">Log in with Google</button>
             <hr/>
             <input className="signupInput" type="text" placeholder="Email Address"></input>
-            <input className="signupInput" type="text" placeholder="New Password"></input>
+            <input className="signupInput" type="password" placeholder="New Password"></input>
             <button id="signup-btn">Sign up</button> 
             <div className="redirection">
                 <div>Have an account already? <Link to="/Login" id="username-reset"> <span className="boldedLinks">Log in now</span></Link></div>

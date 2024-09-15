@@ -9,7 +9,7 @@ const Login = () =>{
             <button id="google-auth-login">Log in with Google</button>
             <hr/>
             <input className="loginInput" type="text" placeholder="Email Address"></input>
-            <input className="loginInput" type="text" placeholder="Password"></input>
+            <input className="loginInput" type="password" placeholder="Password"></input>
             <button id="login-btn">Log In</button>
             <div className="redirection">
                 <div>Forgot your <Link to="/" id="username-reset"> <span className="boldedLinks">username</span></Link> or <Link to="/" id="password-reset"><span className="boldedLinks">password</span></Link>?</div>
