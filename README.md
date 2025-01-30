@@ -1,8 +1,8 @@
-# TripSmart 
+# Tripsmart 
 
-<img src="./public/tripsmart.png" width="200px">
-public/icons/tripsmart.png
-Welcome to **TripSmart** – your go-to tool for planning unforgettable trips with friends! Easily budget, split costs, and organize every detail of your adventure, all in one place.
+<img src="./public/icons/icon.svg" width="200px">
+
+Welcome to **Tripsmart** – your go-to tool for planning unforgettable trips with friends! Easily budget, split costs, and organize every detail of your adventure, all in one place.
 
 ## Project Setup
 
